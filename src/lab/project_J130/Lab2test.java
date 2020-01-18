@@ -70,8 +70,7 @@ public class Lab2test {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
                 double price = rs.getDouble("price");
-                System.out.println("id = " + id
-                        + ", name = " + name + ", price = " + price);
+                System.out.println("id = " + id + ", name = " + name + ", price = " + price);
             }
         } catch (SQLException ex) {
         }

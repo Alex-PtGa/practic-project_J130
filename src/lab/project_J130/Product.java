@@ -78,7 +78,7 @@ public class Product {
             String sql = "SELECT * FROM PRODUCT WHERE ID=" + id + ";";
             ResultSet rs = st.executeQuery(sql);
             if (rs.next()) {
-                //  иакой объект есть, нужен UPDATE
+                //  такой объект есть, нужен UPDATE
                 System.out.println("Такой объект уже есть");
                 sql = "UPDATE PRODUCT SET name'" + name + "' price = " + price + "WHERE id = " + id +";";
                 int n = st.executeUpdate(sql);
